@@ -1,0 +1,20 @@
+SITE — 68.608.979 Bruna Marques dos Santos
+
+Arquivos:
+- index.html: página principal
+- sobre.html: página institucional
+- politica-privacidade.html: política de privacidade
+- termos-de-uso.html: termos de uso
+- css/style.css: estilos personalizados
+- assets/: imagens enviadas pelo cliente
+
+Como visualizar:
+1. Extraia o ZIP.
+2. Abra index.html no navegador.
+3. Para publicar, envie todos os arquivos e pastas para a hospedagem, preservando a estrutura.
+
+Observações importantes:
+- O layout usa Bootstrap 5.3.3 e Bootstrap Icons via CDN, portanto a conexão com a internet é necessária para carregar esses recursos.
+- A política de privacidade e os termos são modelos iniciais; revise-os conforme as práticas reais da empresa, especialmente se adicionar Google Ads, Google Analytics, formulários, cookies, pagamentos ou entrega.
+- Antes de anunciar, confira os dados cadastrais, o e-mail, telefone, endereço e data de abertura.
+- As fotos são ilustrativas. Confirme se os itens mostrados correspondem aos serviços realmente oferecidos.

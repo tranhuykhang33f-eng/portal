@@ -1,0 +1,60 @@
+:root {
+  --brand: #0f766e;
+  --brand-dark: #115e59;
+  --brand-light: #ccfbf1;
+  --accent: #f59e0b;
+  --ink: #18312f;
+  --muted: #64748b;
+  --cream: #fffaf0;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { color: var(--ink); font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif; }
+.navbar { background: rgba(255,255,255,.96); backdrop-filter: blur(12px); }
+.brand-mark { width: 42px; height: 42px; display: inline-grid; place-items: center; color: #fff; background: var(--brand); border-radius: 14px; }
+.navbar-brand { color: var(--brand-dark); font-weight: 800; letter-spacing: -.03em; }
+.nav-link { font-weight: 600; color: #334155; }
+.nav-link:hover { color: var(--brand); }
+.btn-brand { background: var(--brand); color: #fff; border: 1px solid var(--brand); border-radius: 999px; padding: .8rem 1.25rem; font-weight: 700; }
+.btn-brand:hover { background: var(--brand-dark); color: #fff; border-color: var(--brand-dark); }
+.btn-outline-brand { border: 1px solid var(--brand); color: var(--brand-dark); border-radius: 999px; padding: .8rem 1.25rem; font-weight: 700; }
+.btn-outline-brand:hover { background: var(--brand); color: #fff; }
+.hero { position: relative; overflow: hidden; background: linear-gradient(115deg, #f0fdfa 0%, #fffaf0 60%, #ffedd5 100%); padding: 5.5rem 0 4.5rem; }
+.hero:before { content:""; position:absolute; width:360px; height:360px; border-radius:50%; background:rgba(20,184,166,.09); right:-100px; top:-100px; }
+.hero .container { position: relative; z-index: 1; }
+.eyebrow { display:inline-flex; gap:.5rem; align-items:center; background:#fff; color:var(--brand-dark); border:1px solid #ccfbf1; padding:.45rem .8rem; border-radius:999px; font-size:.86rem; font-weight:700; }
+.hero h1 { font-size: clamp(2.5rem, 5vw, 4.6rem); line-height:1.05; letter-spacing:-.055em; font-weight:850; max-width: 680px; }
+.hero h1 span { color:var(--brand); }
+.hero-copy { max-width:580px; color:#475569; font-size:1.12rem; line-height:1.8; }
+.hero-image { border-radius: 2rem; overflow:hidden; box-shadow:0 24px 70px rgba(15,118,110,.18); border:8px solid rgba(255,255,255,.8); transform: rotate(1deg); }
+.hero-image img { width:100%; height:440px; object-fit:cover; }
+.section-pad { padding:5rem 0; }
+.section-kicker { color:var(--brand); text-transform:uppercase; font-weight:800; font-size:.78rem; letter-spacing:.14em; }
+.section-title { font-weight:850; letter-spacing:-.04em; font-size:clamp(2rem,3vw,3rem); }
+.section-lead { color:var(--muted); max-width:680px; line-height:1.8; }
+.feature-card { height:100%; border:1px solid #e2e8f0; border-radius:1.35rem; padding:1.6rem; background:#fff; transition:transform .2s, box-shadow .2s; }
+.feature-card:hover { transform:translateY(-5px); box-shadow:0 18px 45px rgba(15,23,42,.08); }
+.feature-icon { width:52px; height:52px; display:grid; place-items:center; background:var(--brand-light); color:var(--brand-dark); border-radius:16px; font-size:1.35rem; margin-bottom:1.1rem; }
+.food-card { border:0; border-radius:1.4rem; overflow:hidden; box-shadow:0 10px 35px rgba(15,23,42,.08); height:100%; }
+.food-card img { height:245px; object-fit:cover; }
+.food-card .card-body { padding:1.4rem; }
+.process-number { width:44px; height:44px; display:grid; place-items:center; border-radius:50%; background:var(--brand); color:#fff; font-weight:800; flex-shrink:0; }
+.cta-band { background:var(--brand-dark); color:#fff; border-radius:2rem; padding:3.2rem; overflow:hidden; position:relative; }
+.cta-band p { color:#d1fae5; }
+.contact-panel { background:var(--cream); border:1px solid #fde68a; border-radius:1.5rem; padding:2rem; }
+footer { background:#102a28; color:#e2e8f0; }
+footer a { color:#ccfbf1; text-decoration:none; }
+footer a:hover { color:#fff; text-decoration:underline; }
+.footer-label { color:#99f6e4; font-size:.76rem; text-transform:uppercase; letter-spacing:.12em; font-weight:800; }
+.footer-muted { color:#cbd5e1; }
+.legal-hero { background:linear-gradient(120deg,#f0fdfa,#fffaf0); padding:4rem 0 3rem; }
+.legal-content { max-width:900px; }
+.legal-content h2 { font-size:1.3rem; font-weight:800; margin-top:2rem; }
+.legal-content p, .legal-content li { color:#475569; line-height:1.85; }
+.small-note { font-size:.88rem; color:#64748b; }
+@media (max-width: 767px) {
+ .hero { padding:3.5rem 0; }
+ .hero-image img { height:300px; }
+ .section-pad { padding:3.5rem 0; }
+ .cta-band { padding:2rem; }
+}
